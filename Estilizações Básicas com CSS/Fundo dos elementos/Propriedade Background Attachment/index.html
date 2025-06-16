@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Redimensionando as Imagens de Fundo dos Elementos</title>
+    <style>
+        body {
+            height: 200vh;
+        }
+
+        div {
+            margin-bottom: 30px;
+        }
+
+        .exemplo {
+            width: 300px;
+            height: 300px;
+            background-image: url(imagem02.png);
+            background-size: cover;
+            border: 2px solid red;
+            overflow: auto;
+        }
+
+        #fixed {
+            background-attachment: fixed;
+        }
+
+        #scroll {
+            background-attachment: scroll;
+        }
+
+        #local {
+            background-attachment: local;
+        }
+
+    </style>
+</head>
+<body>
+    <code>background-attachment: fixed;</code> 
+    <div class="exemplo" id="fixed">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum aliquam culpa cum dolore accusamus esse itaque, harum pariatur cumque doloremque deleniti excepturi, quia voluptatibus iste necessitatibus ex error? Repudiandae, nulla. Lorem ipsum dolor, sit amet consectetur adipisicing elit. In odio error repellat saepe harum quae quia voluptas est deleniti consequuntur laboriosam, cupiditate, similique recusandae at iste corporis, adipisci dolore esse? Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda blanditiis dolor ratione ab ducimus minus ullam, enim vel placeat facere recusandae quas incidunt consectetur dolorum iure totam voluptatem corrupti deserunt? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate distinctio, fuga eveniet magnam inventore repellendus ex quo dicta qui error, saepe veniam libero provident adipisci similique excepturi explicabo quis quisquam!</p>
+    </div>
+
+    <br>
+    <code>background-attachment: scroll;</code> 
+    <div class="exemplo" id="scroll">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum aliquam culpa cum dolore accusamus esse itaque, harum pariatur cumque doloremque deleniti excepturi, quia voluptatibus iste necessitatibus ex error? Repudiandae, nulla. Lorem ipsum dolor, sit amet consectetur adipisicing elit. In odio error repellat saepe harum quae quia voluptas est deleniti consequuntur laboriosam, cupiditate, similique recusandae at iste corporis, adipisci dolore esse? Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda blanditiis dolor ratione ab ducimus minus ullam, enim vel placeat facere recusandae quas incidunt consectetur dolorum iure totam voluptatem corrupti deserunt? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate distinctio, fuga eveniet magnam inventore repellendus ex quo dicta qui error, saepe veniam libero provident adipisci similique excepturi explicabo quis quisquam!</p>
+    </div>
+
+    <br>
+    <code>background-attachment: local;</code> 
+    <div class="exemplo" id="local">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum aliquam culpa cum dolore accusamus esse itaque, harum pariatur cumque doloremque deleniti excepturi, quia voluptatibus iste necessitatibus ex error? Repudiandae, nulla. Lorem ipsum dolor, sit amet consectetur adipisicing elit. In odio error repellat saepe harum quae quia voluptas est deleniti consequuntur laboriosam, cupiditate, similique recusandae at iste corporis, adipisci dolore esse? Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda blanditiis dolor ratione ab ducimus minus ullam, enim vel placeat facere recusandae quas incidunt consectetur dolorum iure totam voluptatem corrupti deserunt? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate distinctio, fuga eveniet magnam inventore repellendus ex quo dicta qui error, saepe veniam libero provident adipisci similique excepturi explicabo quis quisquam!</p>
+    </div>
+</body>
+</html>
