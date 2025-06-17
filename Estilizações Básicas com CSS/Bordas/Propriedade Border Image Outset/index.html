@@ -18,13 +18,19 @@
 
         #exemplo1 {
             border-image-source: url(borda.png);
-            border-image-repeat: repeat;
-            border-image-slice:  169;
+            border-image-repeat: round;
+            border-image-slice:  1000;
+            border-image-outset: 20px;
         }
 
         #exemplo2 {
             border-image-source: linear-gradient(red, green);
             border-image-slice: 10;
+            border-image-outset: 40px;
+        }
+
+        #exemplo-resumido {
+            border-image: url(borda.png) 1000 / 30px / 1 round;
         }
     </style>
 </head>
@@ -45,6 +51,10 @@
     </div>
 
     <div class="exemplo" id="exemplo2">
+
+    </div>
+
+        <div class="exemplo" id="exemplo-resumido">
 
     </div>
 </body>
