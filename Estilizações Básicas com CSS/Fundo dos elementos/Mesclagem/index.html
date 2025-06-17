@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Redimensionando as Imagens de Fundo dos Elementos</title>
+    <style>
+        body {
+            height: 200vh;
+        }
+
+        div {
+            margin-bottom: 30px;
+        }
+
+        .exemplo {
+            width: 300px;
+            height: 300px;
+            border: 15px dashed green;
+            color: gold;
+            padding: 30px;
+            font-size: 40px;
+            font-weight: 900;
+            background-color: brown;
+
+            background-image: url(pngtree-abstract-wavy-black-background-for-background-with-smooth-wavy-lines-stock-image_2628415.jpg);
+
+            /*CSS3 patterns gallery
+            background:
+            linear-gradient(135deg, #708090 21px, #d9ecff 22px, #d9ecff 24px, transparent 24px, transparent 67px, #d9ecff 67px, #d9ecff 69px, transparent 69px),
+            linear-gradient(225deg, #708090 21px, #d9ecff 22px, #d9ecff 24px, transparent 24px, transparent 67px, #d9ecff 67px, #d9ecff 69px, transparent 69px)0 64px;
+            background-color:#708090;
+            background-size: 64px 128px;
+            */
+        }
+
+        #padding-box {
+            background-clip: padding-box;
+        }
+
+        #border-box {
+            background-clip: border-box;
+        }
+
+        #content-box {
+            background-clip: content-box;
+        }
+
+        #text {
+            -webkit-background-clip: text;
+            color: transparent;
+            background-clip: text;
+        }
+
+    </style>
+</head>
+<body>
+    <code>background-clip: padding-box;</code> 
+    <div class="exemplo" id="padding-box">
+        <h1>TRILHA DE CSS</h1>
+    </div>
+
+    <br>
+    <code>background-clip: border-box;</code> 
+    <div class="exemplo" id="border-box">
+        <h1>TRILHA DE CSS</h1>
+    </div>
+
+    <br>
+    <code>background-clip: content-box;</code> 
+    <div class="exemplo" id="content-box">
+        <h1>TRILHA DE CSS</h1>
+    </div>
+
+    <br>
+    <code>background-clip: ;</code> 
+    <div class="exemplo" id="text">
+        <h1>TRILHA DE CSS</h1>
+    </div>
+</body>
+</html>
