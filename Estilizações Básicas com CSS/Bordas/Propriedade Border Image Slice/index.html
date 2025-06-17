@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Propriedade Border Image Source</title>
+    <style>
+        div {
+            margin: 20px;
+        }
+
+        .exemplo {
+            background-color: rgb(0, 0, 0);
+            width: 200px;
+            height: 200px;
+            border: 20px solid;
+        }
+
+        #exemplo1 {
+            border-image-source: url(borda.png);
+        }
+
+        #exemplo2 {
+            border-image-source: linear-gradient(red, green);
+        }
+    </style>
+</head>
+<body>
+    <h1>Bordas com Imagens</h1>
+
+    <ul>
+        <li>border-image-source</li>
+        <li>border-image-width</li>
+        <li>border-image-repeat</li>
+        <li>border-image-outset</li>
+        <li>border-image-slice</li>
+    </ul>
+
+    <h2>Exemplo:</h2>
+    <div class="exemplo" id="exemplo1">
+
+    </div>
+
+    <div class="exemplo" id="exemplo2">
+
+    </div>
+</body>
+</html>
