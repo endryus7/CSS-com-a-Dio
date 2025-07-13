@@ -1,0 +1,21 @@
+@media screen and (max-width: 690px) {
+    .details {
+        flex-direction: column;
+    }
+
+    .image-card {
+        flex-basis: 100px;
+    }
+}
+
+@media screen and (orientation: portrait) {
+    header {
+        background-color: lightgreen;
+    }
+}
+
+@media screen and (pointer: coarse) {
+    header {
+        color: cornflowerblue;
+    }
+}
