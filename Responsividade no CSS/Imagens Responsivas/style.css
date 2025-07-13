@@ -1,0 +1,20 @@
+.image-container {
+    border: 2px solid red;
+    height: 200px;
+    width: 100%;
+    background-image: url(imagem-pequena.png);
+}
+
+@media screen and (max-width: 690px) {
+    .image-container {
+        background-image: url(dio.png);
+    }
+}
+
+
+/*
+img {
+    max-width: 100%;
+}
+*/
+
