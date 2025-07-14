@@ -1,0 +1,25 @@
+@media screen and (min-width: 720px) {
+    main {
+        flex-direction: row;
+        gap: 24px;
+        max-width: 1200px;
+        margin: 16px auto;
+    }
+
+    #presentation {
+        flex-basis: 500px;
+    }
+
+    #skills, #education {
+        flex: 1;
+    }
+
+    nav ul {
+        flex-direction: row;
+    }
+
+    nav ul li {
+        flex: 1;
+        text-align: center;
+    }
+}
