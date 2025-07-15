@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Display Block</title>
+    <style>
+        .exemplo {
+            background-color: palevioletred;
+        }
+
+        .inline {
+            color: white;
+
+        }
+
+        .inline-block {
+            display: inline-block;
+            width: 200px;
+            height: 100px;
+            margin: 8px;
+            padding: 30px;
+        }
+
+        .menu {
+            background-color: aqua;
+        }
+
+        .menu ul li {
+            display: inline-block;
+            padding: 20px 40px;
+        }
+
+        .menu ul li a {
+            text-decoration: none;
+            color: black;
+        }
+
+        .esconder-elemento {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <h1>Propriedade Display</h1>
+    <p>A propriedade display vai determinar como essas caixas retangulares irão se comportar na hora de serem exibidas na tela.</p>
+    <ul>
+        <li>border-width</li>
+        <li>border-style</li>
+        <li>border-color</li>
+    </ul>
+    <h2>Exemplos:</h2>
+    <code>display: block;</code>
+    <br><br>
+    <div class="exemplo"> Exemplo Bloco 01</div>
+    <div class="exemplo"> Exemplo Bloco 02</div>
+    <p class="exemplo">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Delectus culpa porro distinctio. Provident distinctio nam suscipit ea nihil quisquam, iste, asperiores ad dolores nesciunt quam! Voluptas architecto non eos ducimus!</p>
+    <span class="exemplo">Exemplo bloco 03</span>
+    <span class="exemplo">Exemplo bloco 04</span>
+
+    <br><br>
+    <code>display: inline;</code>
+    <br><br>
+
+    <span class="exemplo inline">Exemplo Inline 01</span>
+    <em class="exemplo inline">Exemplo Inline 02</em>
+
+    <p>Lorem ipsum <b class="exemplo">dolor sit amet</b> consectetur adipisicing elit. Numquam recusandae ea quidem labore fugiat repellat repudiandae</p>
+
+    <br><br>
+    <code>display: inline-block;</code>
+    <br><br>
+
+    <span class="exemplo inline-block">Exemplo Inline Block 01</span>
+    <em class="exemplo inline-block">Exemplo Inline Block 02</em>
+    <b class="exemplo inline-block">Exemplo Inline Block 03</b>
+    <span class="exemplo inline-block">Exemplo Inline Block 04</span>
+    <em class="exemplo inline-block">Exemplo Inline Block 05</em>
+    <b class="exemplo inline-block">Exemplo Inline Block 06</b>
+
+    <br><br><br>
+    <h3>Menu de nav</h3>
+    <nav class="menu">
+        <ul>
+            <li><a href="#">Meu link 01</a></li>
+            <li><a href="#">Meu link 02</a></li>
+            <li><a href="#">Meu link 03</a></li>
+        </ul>
+    </nav>
+
+    <br><br>
+    <code>display: none;</code>
+    <br><br>
+
+    <div class="exemplo">
+        <p>Exemplo 01</p>
+        <span class="esconder-elemento">oi</span>
+        <span>Trilha de CSS</span>
+    </div>
+
+    <br><br>
+    <h3>Menu de nav</h3>
+    <nav class="menu">
+        <ul>
+            <li><a href="#">Meu link 01</a></li>
+            <li><a href="#" class="esconder-elemento">Meu link 02</a></li>
+            <li><a href="#">Meu link 03</a></li>
+        </ul>
+    </nav>
+</body>
+</html>
