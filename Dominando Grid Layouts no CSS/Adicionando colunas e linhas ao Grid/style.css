@@ -1,0 +1,48 @@
+.container {
+    background-color: yellow;
+    padding: 10px;
+    margin-bottom: 20px;
+    height: 500px;
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+
+    /* grid-template-columns: repeat(auto-fill, 100px) ajusta o maximo de colunas que couber*/
+
+    /* grid-template-columns: repeat(auto-fit, 100px) quando nao tem item suficiente para preencher o numero de colunas essas faixas sao recolhidas*/
+
+    /* repeat(3, 1fr 2fr);  1fr 2fr - 1fr 2fr - 1fr 2fr*/
+}
+
+.item {
+    border: 1px solid black;
+}
+
+.item-01 {
+    background-color: palevioletred;
+}
+
+.item-02 {
+    background-color: cornflowerblue;
+}
+
+.item-03 {
+    background-color: palegreen;
+}
+
+.item-04 {
+    background-color: orange;
+}
+
+.item-05 {
+    background-color: paleturquoise;
+}
+
+.item-06 {
+    background-color: aqua;
+}
+
+.item-07 {
+    background-color: tomato;
+}
