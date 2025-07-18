@@ -1,0 +1,107 @@
+.container {
+    border: 2px solid black;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr) 4fr repeat(2, 1fr);
+    grid-template-rows: 50px 100px 200px;
+}
+
+.item1 {
+    text-align: center;
+    background-color: orange;
+    grid-column-start: 2;
+    grid-column-end: 5;
+    grid-row-start: 1;
+    grid-row-end: 3;
+}
+
+.container2 {
+    border: 2px solid black;
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr) 4fr repeat(2, 1fr);
+    grid-template-rows: 50px 100px 200px;
+}
+
+.item2 {
+    text-align: center;
+    background-color: skyblue;
+
+    /*grid-column-start: 1;
+    grid-column-end: span 3;*/
+
+    grid-column: 1 / span 3;
+
+    /*grid-row-start: 2;
+    grid-row-end: span 2;*/
+
+    grid-row: 2 / span 2;
+
+    /* span ocupa as celulas*/
+}
+
+.container3 {
+    border: 2px solid black;
+    margin-top: 30px;
+    display: grid;
+    
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 100px);
+}
+
+.item {
+    text-align: center;
+    background-color: deeppink;
+    border: 1px solid black;
+}
+
+.selected {
+    background-color: aqua;
+    grid-column: 2 / span 1;
+    grid-row: 2 / span 1;
+}
+
+.container4 {
+    border: 2px solid black;
+    margin-top: 30px;
+    display: grid;
+    
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 100px);
+}
+
+.item4 {
+    text-align: center;
+    background-color: rebeccapurple;
+    border: 1px solid black;
+}
+
+.selected4 {
+    background-color: forestgreen;
+    grid-column: 3 / span 1;
+    grid-row: 2 / span 1;
+}
+
+.container5 {
+    border: 2px solid black;
+    margin-top: 30px;
+    display: grid;
+    
+    grid-template-columns: [primeira-linha-col] 1fr [segunda-linha-col] 1fr [terceira-linha-col] 1fr [quarta-linha-col];
+
+    grid-template-rows: [linha-inicio] 100px [linha-meio] 100px [linha-fim];
+}
+
+.item5 {
+    text-align: center;
+    background-color: orangered;
+    border: 1px solid black;
+}
+
+.selected5 {
+    background-color: burlywood;
+    grid-column:  segunda-linha-col / terceira-linha-col;
+    grid-row: linha-meio / linha-fim;
+}
+
+
+
