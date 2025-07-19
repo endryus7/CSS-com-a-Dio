@@ -1,0 +1,54 @@
+body {
+    display: grid;
+    border: 3px solid black;
+    height: 80vh;
+    grid-template: repeat(3, 100px) / repeat(3, auto);
+
+    place-items: center;
+
+    /*
+    justify-content: space-between;
+    align-content: space-around;
+    */
+
+    /* 
+    shorhand place-content: align-content / justify-content;
+    */
+    place-content: space-around space-between;
+}
+
+.item-01 {
+    background-color: palegoldenrod;
+}
+
+.item-02 {
+    background-color: paleturquoise;
+}
+
+.item-03 {
+    background-color: palegreen;
+}
+
+.item-04 {
+    background-color: palevioletred;
+}
+
+.item-05 {
+    background-color: lightseagreen;
+}
+
+.item-06 {
+    background-color: rebeccapurple;
+}
+
+.item-07 {
+    background-color: burlywood;
+}
+
+.item-08 {
+    background-color: blanchedalmond;
+}
+
+.item-09 {
+    background-color: grey;
+}
